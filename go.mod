@@ -4,9 +4,7 @@ go 1.23.1
 
 require (
 	github.com/gorilla/handlers v1.5.2
-	github.com/jmbit/dtsrv v0.0.0-20241005172343-c1a79181b655
 	github.com/joho/godotenv v1.5.1
-	github.com/spf13/cobra v1.8.1
 	github.com/spf13/viper v1.19.0
 )
 
@@ -14,7 +12,6 @@ require (
 	github.com/felixge/httpsnoop v1.0.4 // indirect
 	github.com/fsnotify/fsnotify v1.7.0 // indirect
 	github.com/hashicorp/hcl v1.0.0 // indirect
-	github.com/inconshreveable/mousetrap v1.1.0 // indirect
 	github.com/magiconair/properties v1.8.7 // indirect
 	github.com/mitchellh/mapstructure v1.5.0 // indirect
 	github.com/pelletier/go-toml/v2 v2.2.2 // indirect
