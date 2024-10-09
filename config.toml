@@ -1,0 +1,9 @@
+[web]
+cert = '/etc/ssl/certs/ssl-cert-snakeoil.pem'
+host = '127.0.0.1'
+key = '/etc/ssl/key/ssl-cert-snakeoil.key'
+loghttp = true
+os = 'WinXP'
+port = 8080
+server = 'iis'
+tls = false
