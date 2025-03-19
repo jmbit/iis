@@ -1,6 +1,9 @@
 package middlewares
 
-import "net/http"
+import (
+	"net/http"
+	"strings"
+)
 
 
 func ServerHeaders(next http.Handler) http.Handler {
@@ -9,6 +12,9 @@ func ServerHeaders(next http.Handler) http.Handler {
 			w.Header().Set("Cache-Control", "private")
       w.Header().Set("Set-Cookie", "ASPSESSIONIDSARQSTTR=HAKPENADIDKHMGENJFPENNDM; path=/")
       w.Header().Set("X-Powered-By", "ASP.NET")
+     if strings.HasSuffix(r.URL.Path, ".asp") {
+      w.Header().Set("Content-Type", "text/html")
+    }
 		next.ServeHTTP(w, r)
 	})
 }

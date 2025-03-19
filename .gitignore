@@ -1,2 +1,4 @@
 *.swp
 iis
+iis_*
+tmp/*

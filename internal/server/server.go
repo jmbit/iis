@@ -22,6 +22,7 @@ func NewServer() *http.Server {
 	  middlewareStack = middlewares.CreateStack(
 	  	middlewares.GorillaLogging,
       middlewares.ServerHeaders,
+      middlewares.IndexRedirect,
 	  	handlers.RecoveryHandler(),
 	  )
   } else {
